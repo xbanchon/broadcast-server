@@ -1,6 +1,8 @@
 # Broadcast Server
 This is a naive CLI tool implementation of an broadcast server using WebSockets communication protocol. Handles multiple client connections and graceful server shutdown. The server will listen for upcoming client connection requests and upgrade them to a WebSocket connection, once the connection is established it will handle upcoming messages sent by any client and echo them to every connected client.
 
+
+## Usage
 To start the server run the command:
 ```
 broadcast-server start
@@ -35,3 +37,6 @@ dial to <server-url> successful
 ```
 
 For a detailed description of the commands use `broadcast-server help`
+
+## Acknowledgements
+This app was inspired by [roadmap.sh's](https://roadmap.sh/projects/broadcast-server) project idea.
